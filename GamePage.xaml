@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Meowi.GamePage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="40,0" Spacing="25">
+            <Label Text="Dead or Alive?" FontSize="36" HorizontalOptions="Center"/>
+            <Grid HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <ImageButton
+                    Grid.Row="0" Grid.Column="0"
+                    Clicked="OnImageButtonClicked"
+                    HeightRequest="250"
+                    Source="cat_kitten_1.jpg"
+                />
+                <ImageButton
+                    Grid.Row="1" Grid.Column="0"
+                    Clicked="OnImageButtonClicked"
+                    HeightRequest="250"
+                    Source="cat_kitten_2.jpg"
+                />
+                <ImageButton
+                    Grid.Row="2" Grid.Column="0"
+                    Clicked="OnImageButtonClicked"
+                    HeightRequest="250"
+                    Source="cat_kitten_3.jpg"
+                />
+                
+                <ImageButton
+                    Grid.Row="0" Grid.Column="1"
+                    Clicked="OnImageButtonClicked"
+                    HeightRequest="250"
+                    Source="cat_kitten_4.jpg"
+                />
+                <ImageButton
+                    Grid.Row="1" Grid.Column="1"
+                    Clicked="OnImageButtonClicked"
+                    HeightRequest="250"
+                    Source="cat_kitten_5.jpg"
+                />
+                <ImageButton
+                    Grid.Row="2" Grid.Column="1"
+                    Clicked="OnImageButtonClicked"
+                    HeightRequest="250"
+                    Source="cat_kitten_6.jpg"
+                />
+                
+                <ImageButton
+                    Grid.Row="0" Grid.Column="2"
+                    Clicked="OnImageButtonClicked"
+                    HeightRequest="250"
+                    Source="cat_kitten_7.jpg"
+                />
+                <ImageButton
+                    Grid.Row="1" Grid.Column="2"
+                    Clicked="OnImageButtonClicked"
+                    HeightRequest="250"
+                    Source="cat_kitten_8.jpg"
+                />
+                <ImageButton
+                    Grid.Row="2" Grid.Column="2"
+                    Clicked="OnImageButtonClicked"
+                    HeightRequest="250"
+                    Source="cat_kitten_9.jpg"
+                />
+            </Grid>
+           
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button
+                    Text="Dead" 
+                    SemanticProperties.Hint="Yes response"
+                    HorizontalOptions="Fill" />
+                <Button
+                    Text="Alive" 
+                    SemanticProperties.Hint="Yes response"
+                    HorizontalOptions="Fill" />
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
