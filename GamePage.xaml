@@ -22,67 +22,71 @@
                     Grid.Row="0" Grid.Column="0"
                     Clicked="OnImageButtonClicked"
                     HeightRequest="250"
-                    Source="cat_kitten_1.jpg"
+                    Source="cat_kitten_5.jpg"
                 />
                 <ImageButton
                     Grid.Row="1" Grid.Column="0"
                     Clicked="OnImageButtonClicked"
                     HeightRequest="250"
-                    Source="cat_kitten_2.jpg"
+                    Source="cat_kitten_10.jpg"
                 />
                 <ImageButton
                     Grid.Row="2" Grid.Column="0"
                     Clicked="OnImageButtonClicked"
                     HeightRequest="250"
-                    Source="cat_kitten_3.jpg"
+                    Source="cat_kitten_15.jpg"
                 />
                 
                 <ImageButton
                     Grid.Row="0" Grid.Column="1"
                     Clicked="OnImageButtonClicked"
                     HeightRequest="250"
-                    Source="cat_kitten_4.jpg"
+                    Source="cat_kitten_25.jpg"
                 />
                 <ImageButton
                     Grid.Row="1" Grid.Column="1"
                     Clicked="OnImageButtonClicked"
                     HeightRequest="250"
-                    Source="cat_kitten_5.jpg"
+                    Source="mystery_box.png"
                 />
                 <ImageButton
                     Grid.Row="2" Grid.Column="1"
                     Clicked="OnImageButtonClicked"
                     HeightRequest="250"
-                    Source="cat_kitten_6.jpg"
+                    Source="cat_kitten_30.jpg"
                 />
                 
                 <ImageButton
                     Grid.Row="0" Grid.Column="2"
                     Clicked="OnImageButtonClicked"
                     HeightRequest="250"
-                    Source="cat_kitten_7.jpg"
+                    Source="cat_kitten_34.jpg"
                 />
                 <ImageButton
                     Grid.Row="1" Grid.Column="2"
                     Clicked="OnImageButtonClicked"
                     HeightRequest="250"
-                    Source="cat_kitten_8.jpg"
+                    Source="cat_kitten_42.jpg"
                 />
                 <ImageButton
                     Grid.Row="2" Grid.Column="2"
                     Clicked="OnImageButtonClicked"
                     HeightRequest="250"
-                    Source="cat_kitten_9.jpg"
+                    Source="cat_kitten_50.jpg"
                 />
             </Grid>
            
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                 <Button
+                    x:Name="Dead"
                     Text="Dead" 
+                    Clicked="OnDeadClicked"
                     SemanticProperties.Hint="Yes response"
                     HorizontalOptions="Fill" />
                 <Button
-                    Text="Alive" 
+                    x:Name="Alive"
+                    Text="Alive"
+                    Clicked="OnAliveClicked"
                     SemanticProperties.Hint="Yes response"
                     HorizontalOptions="Fill" />
             </StackLayout>
